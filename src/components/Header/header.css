@@ -1,0 +1,26 @@
+.text-gradient-underline {
+  position: relative;
+}
+
+.text-gradient-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(45deg, #ffbf00, #ff0000, #ffbf00);
+  background-size: 200% 200%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.text-gradient-underline:hover::after {
+  opacity: 1;
+}
+
+.shadow-custom {
+  -webkit-box-shadow: 0px 0px 70px 15px rgba(253, 249, 249, 0.32);
+  -moz-box-shadow: 0px 0px 70px 15px rgba(253, 249, 249, 0.32);
+  box-shadow: 0px 0px 70px 15px rgba(253, 249, 249, 0.32);
+}
